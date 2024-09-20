@@ -15,7 +15,7 @@ function Create() {
     function handleSubmit(e){
         e.preventDefault()
 
-        axios.post('https://student-management-web-site-v8fu.vercel.app/add_user', values)
+        axios.post('/add_user', values)
         .then((res)=>{
             
             navigate('/')

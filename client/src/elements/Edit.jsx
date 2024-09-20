@@ -9,7 +9,7 @@ function Edit() {
 
   useEffect(() => {
     axios
-      .get(`https://student-management-web-site-v8fu.vercel.app/get_student/${id}`)
+      .get(`/get_student/${id}`)
       .then((res) => {
         setData(res.data);
       })
@@ -20,7 +20,7 @@ function Edit() {
     e.preventDefault();
 
     axios
-      .post(`https://student-management-web-site-v8fu.vercel.app/edit_user/${id}`, data[0])
+      .post(`/edit_user/${id}`, data[0])
       .then((res) => {
         navigate("/");
         console.log(res);
