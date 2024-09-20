@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "npm start",
+    "start": "node server.js",
     "dev": "set NODE_ENV=production run server.js",
     "build": "set NODE_ENV=production npm install"
   },
