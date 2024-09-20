@@ -6,7 +6,7 @@
     "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
     "start:frontend": "cd client && npm start",
     "start:backend": "cd server && npm start",
-    "build": "npm run build"
+    "build": "set NODE_ENV=production npm install"
   },
   "keywords": [],
   "author": "",
