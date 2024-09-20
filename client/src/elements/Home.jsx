@@ -8,7 +8,7 @@ function Home() {
     const [filteredData, setFilteredData] = useState([]);
 
     useEffect(() => {
-        axios.get('/students')
+        axios.get('https://student-web-site-2d8p.vercel.app/students')
             .then((res) => {
                 setData(res.data);
                 setFilteredData(res.data); // Initialize filteredData with all students
@@ -25,7 +25,7 @@ function Home() {
     };
 
     const handleDelete = (id) => {
-        axios.delete(`/delete/${id}`)
+        axios.delete(`https://student-web-site-2d8p.vercel.app/delete/${id}`)
             .then(() => {
                 setData(data.filter(student => student.id !== id));
                 setFilteredData(filteredData.filter(student => student.id !== id)); // Update filtered data
