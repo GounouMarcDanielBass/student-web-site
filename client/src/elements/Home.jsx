@@ -8,7 +8,7 @@ function Home() {
     const [filteredData, setFilteredData] = useState([]);
 
     useEffect(() => {
-        axios.get('/students')
+        axios.get('https://student-management-web-site-v8fu.vercel.app/students')
             .then((res) => {
                 setData(res.data);
                 setFilteredData(res.data); // Initialize filteredData with all students
