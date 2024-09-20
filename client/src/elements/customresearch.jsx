@@ -11,7 +11,7 @@ function CustomResearch() {
     useEffect(() => {
         setLoading(true);
         console.log("Searching for:", query); // Debugging log
-        axios.post('https://student-web-site-2d8p.vercel.app/custom_search', { query })
+        axios.post('/custom_search', { query })
             .then((res) => {
                 console.log("Search results:", res.data); // Log the results
                 setResults(res.data);

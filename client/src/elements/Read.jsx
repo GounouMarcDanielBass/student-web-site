@@ -7,7 +7,7 @@ function Read() {
   const { id } = useParams();
   useEffect(() => {
     axios
-      .get(`https://student-web-site-2d8p.vercel.app/get_student/${id}`)
+      .get(`/get_student/${id}`)
       .then((res) => {
         setData(res.data);
       })
